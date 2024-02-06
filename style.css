@@ -404,3 +404,51 @@ ul a{
 .footer-lang p{
     padding-top: 20px;
 }
+
+/* For devices up to 768px width (phones) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+    .back-image {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+    .logo {
+        height: 30px; /* Adjust logo size for smaller screens */
+    }
+    #butt-signin {
+        margin: 10px 0; /* Adjust button margin for smaller screens */
+    }
+    .front-text {
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+    .email-signup input, .email-signup button {
+        width: 100%; /* Make email input and button full width for smaller screens */
+    }
+}
+
+/* For devices between 768px and 1024px width (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .back-image {
+        padding: 10px; /* Adjust padding for medium screens */
+    }
+    .logo {
+        height: 35px; /* Adjust logo size for medium screens */
+    }
+    .front-text {
+        margin-top: 80px; /* Adjust margin for medium screens */
+    }
+}
+
+/* For devices greater than 1024px width (laptops and desktops) */
+@media only screen and (min-width: 1025px) {
+    .back-image {
+        padding: 13px 8%; /* Reset padding for larger screens */
+    }
+    .logo {
+        height: 40px; /* Reset logo size for larger screens */
+    }
+    .front-text {
+        margin-top: 100px; /* Reset margin for larger screens */
+    }
+}
