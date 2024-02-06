@@ -407,48 +407,103 @@ ul a{
 
 /* For devices up to 768px width (phones) */
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* Adjust font size for better readability on smaller screens */
-    }
+    /* Adjust image sizes */
     .back-image {
-        padding: 8px; /* Adjust padding for smaller screens */
+        background-size: cover;
+    }
+    .box1 img,
+    .box2 img,
+    .box3 img,
+    .box4 img {
+        width: 100%;
+    }
+    /* Adjust box layout */
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: block;
+        padding: 30px 15px;
+    }
+    /* Adjust navbar */
+    nav {
+        padding: 10px;
     }
     .logo {
-        height: 30px; /* Adjust logo size for smaller screens */
+        height: 30px;
+    }
+    #nab-eng {
+        padding: 4px 8px;
     }
     #butt-signin {
-        margin: 10px 0; /* Adjust button margin for smaller screens */
-    }
-    .front-text {
-        margin-top: 50px; /* Adjust margin for smaller screens */
-    }
-    .email-signup input, .email-signup button {
-        width: 100%; /* Make email input and button full width for smaller screens */
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
 
 /* For devices between 768px and 1024px width (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust image sizes */
     .back-image {
-        padding: 10px; /* Adjust padding for medium screens */
+        background-size: cover;
+    }
+    .box1 img,
+    .box2 img,
+    .box3 img,
+    .box4 img {
+        width: 100%;
+    }
+    /* Adjust box layout */
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: block;
+        padding: 40px 20px;
+    }
+    /* Adjust navbar */
+    nav {
+        padding: 15px;
     }
     .logo {
-        height: 35px; /* Adjust logo size for medium screens */
+        height: 35px;
     }
-    .front-text {
-        margin-top: 80px; /* Adjust margin for medium screens */
+    #nab-eng {
+        padding: 6px 12px;
+    }
+    #butt-signin {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
 
 /* For devices greater than 1024px width (laptops and desktops) */
 @media only screen and (min-width: 1025px) {
+    /* Adjust image sizes */
     .back-image {
-        padding: 13px 8%; /* Reset padding for larger screens */
+        background-size: cover;
+    }
+    /* Adjust box layout */
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 50px;
+    }
+    /* Adjust navbar */
+    nav {
+        padding: 20px 0;
     }
     .logo {
-        height: 40px; /* Reset logo size for larger screens */
+        height: 40px;
     }
-    .front-text {
-        margin-top: 100px; /* Reset margin for larger screens */
+    #nab-eng {
+        padding: 6px 12px;
+    }
+    #butt-signin {
+        font-size: 18px;
+        padding: 12px 24px;
     }
 }
